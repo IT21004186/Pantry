@@ -127,7 +127,15 @@ const Navbar = () => {
                  maxWidth="500px"
                  minWidth="300px"
                  backgroundColor={background}
-                 ></Box>
+                 >
+                    {/* Close Icon */}
+                    <Box display="flex" justifyContent="flex-end" p="1rem">
+                        <IconButton onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
+                        >
+                            <Close />
+                        </IconButton>
+                    </Box>
+                 </Box>
             )}
     </FlexBetween>;
 };
